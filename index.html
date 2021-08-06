@@ -1,1 +1,63 @@
-hola soy el sitio
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hola mundo</title>
+    <style>
+        body { color:#222; background:#f0f0f0; font-family: Tahoma, Verdana, Arial, sans-serif; }
+        .pagina { margin: 0 auto; }
+         * { color:#555; }
+
+        /* color:#D35780; */
+        h1 { color:#c41d39; }
+        h2 {}
+        h3 {}
+        h4 {}
+        /* PC */
+        @media screen and (min-width:900px) {
+
+          .pagina { width:35em; margin-top:200px; }
+
+        }
+        /* Mobile */
+        @media screen and (max-width:900px) {
+
+          .pagina { width:90%; margin-top:50px; }
+
+        }
+    </style>
+    <script type="text/javascript">
+      function url_actual() {
+        var url = window.location.href;
+        //alert(url);
+        document.getElementById("url").innerHTML = url;
+      }
+
+      window.onload = url_actual;
+
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="es-ar">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <noscript>
+      Se requiere activar la compatibilidad con javascript.
+    </noscript>
+  </head>
+  <body>
+
+    <div class="pagina">
+
+      <h1>
+        Hola mundo!
+      </h1>
+      Si ve esta página, el servidor web nginx se instaló correctamente y funciona. Se requiere configuración adicional.
+
+      <h4>
+        <span id="url"></span>
+      </h4>
+
+    </div>
+
+  </body>
+</html>
+
